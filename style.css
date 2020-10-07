@@ -1,0 +1,380 @@
+/* 
+Theme Name: Marios Example
+Author: Jackie Riemersma
+Author URI: https://www.linkedin.com/in/jackie-riemersma/
+Description: The official theme for marios example
+Version: 1.0
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+body,
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Lobster", cursive;
+}
+
+p {
+  font-family: "Raleway", sans-serif;
+}
+
+a {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.nav {
+  height: 200px;
+  background: #404040;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 16px, 00;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-a {
+  padding: 0 25px;
+  color: #ffffff;
+  transition: 0.4s;
+  font-size: 20px;
+}
+
+.nav-ul {
+  display: none;
+}
+
+.phone-link {
+  border-bottom: 2px solid #ffffff;
+  color: #fff;
+  font-size: 20px;
+  margin: 0 25px;
+}
+
+.nav-a:hover {
+  color: #ce0e2d;
+}
+
+.phone-link:hover {
+  color: #ce0e2d;
+  border-bottom: 2px solid #ce0e2d;
+}
+
+.menu-icon {
+  height: 100%;
+  font-size: 28px;
+  padding: 0 5px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 10px;
+}
+
+.mobile-menu {
+  position: absolute;
+  top: 200px;
+  right: 0px;
+  z-index: 1;
+}
+
+.hide {
+  display: none;
+}
+
+.mobile-menu-ul {
+  list-style: none;
+  background-color: #404040;
+  padding: 12px 0;
+  width: 210px;
+}
+
+.mobile-li {
+  padding-bottom: 12px;
+}
+
+.mobile-a {
+  color: #fff;
+  padding: 0 25px;
+  font-size: 20px;
+  transition: 0.4s;
+}
+
+.mobile-a:hover {
+  color: #ce0e2d;
+}
+
+.mobile-phone {
+  border-bottom: 2px solid #fff;
+}
+
+.mobile-phone:hover {
+  color: #ce0e2d;
+  border-bottom: 2px solid #ce0e2d;
+  transition: 0.4s;
+}
+
+.sub-menu-content {
+  list-style: none;
+}
+
+.sub-menu-li {
+  padding: 10px 30px;
+  transition: 0.4s;
+}
+
+.sub-menu-a {
+  color: #fff;
+}
+
+.sub-menu-a:hover {
+  color: #ce0e2d;
+}
+
+.sub-menu-li:hover {
+  background-color: #555555;
+}
+
+.splash {
+  height: 75vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("img/splash.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.splash-h1 {
+  font-size: 52px;
+}
+
+.splash-p {
+  font-size: 20px;
+}
+
+.splash-h1,
+.splash-p {
+  width: 60%;
+  text-align: center;
+}
+
+.menu-link-section {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: #1a5632;
+}
+
+.pizza,
+.italian,
+.mexican {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  flex: 1;
+  padding: 15px;
+  color: #ffffff;
+}
+
+.menu-p {
+  width: 300px;
+}
+
+.btn-link {
+  color: white;
+  border-radius: 5px;
+  background-color: #ce0e2d;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.btn-link:hover {
+  background-color: #ad0d27;
+  transition: 0.4s;
+}
+
+.pick-up-section {
+  height: 75vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("img/pick-up-window.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.pick-up-h2 {
+  font-size: 42px;
+}
+
+.pick-up-p {
+  font-size: 20px;
+}
+
+.pick-up-h2,
+.pick-up-p {
+  width: 60%;
+  text-align: center;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #404040;
+  color: #fff;
+}
+
+.footer-h3 {
+  font-size: 25px;
+  padding: 10px;
+}
+
+.footer-phone-link {
+  border-bottom: 2px solid #ffffff;
+  color: #fff;
+  font-size: 25px;
+}
+
+.footer-phone-link:hover {
+  color: #ce0e2d;
+  border-bottom: 2px solid #ce0e2d;
+  transition: 0.4s;
+}
+
+.call-now {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.hours {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.daily-hours {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+}
+
+.hours-ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.covid-disclaimer {
+  text-align: center;
+  width: 300px;
+  font-size: 14px;
+  margin: 15px 0;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.social-link {
+  color: white;
+  font-size: 35px;
+  padding: 10px;
+}
+
+.social-link:hover {
+  color: #ce0e2d;
+  transition: 0.4s;
+}
+
+@media only screen and (min-width: 895px) {
+  .nav {
+    justify-content: space-between;
+  }
+
+  .nav-ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+  }
+
+  .menu-li {
+    position: relative;
+  }
+
+  .desk-sub-menu-content {
+    list-style: none;
+    position: absolute;
+    top: 35px;
+    left: 15px;
+    width: 210px;
+    background-color: #404040;
+  }
+
+  .sub-menu-li {
+    padding: 10px 15px;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .logo {
+    padding: 0 25px;
+    flex: 0;
+  }
+
+  .footer {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
