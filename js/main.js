@@ -1,8 +1,8 @@
 const menuIcon = document.querySelector(".menu-icon");
 const mobileMenu = document.querySelector(".mobile-menu");
-const subMenuBtn = document.querySelector(".sub-menu-btn");
+const subMenuBtn = document.getElementById("sub-menu-btn");
 const subMenuContent = document.querySelector(".sub-menu-content");
-const deskSubMenuBtn = document.querySelector(".desk-sub-menu-btn");
+const deskSubMenuBtn = document.getElementById("desk-sub-menu-btn");
 const deskSubMenuContent = document.querySelector(".desk-sub-menu-content");
 
 menuIcon.addEventListener("click", () => {

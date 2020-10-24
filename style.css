@@ -53,32 +53,21 @@ a {
   justify-content: center;
 }
 
-.nav-a {
-  padding: 0 25px;
-  color: #ffffff;
-  transition: 0.4s;
-  font-size: 20px;
-}
-
 .nav-ul {
   display: none;
 }
 
-.phone-link {
+/* .phone-link {
   border-bottom: 2px solid #ffffff;
   color: #fff;
   font-size: 20px;
   margin: 0 25px;
-}
+} */
 
-.nav-a:hover {
-  color: #ce0e2d;
-}
-
-.phone-link:hover {
+/* .phone-link:hover {
   color: #ce0e2d;
   border-bottom: 2px solid #ce0e2d;
-}
+} */
 
 .menu-icon {
   height: 100%;
@@ -102,10 +91,10 @@ a {
   display: none;
 }
 
-.mobile-menu-ul {
+.menu {
   list-style: none;
   background-color: #404040;
-  padding: 12px 0;
+  padding-top: 12px;
   width: 210px;
 }
 
@@ -124,7 +113,14 @@ a {
   color: #ce0e2d;
 }
 
-.mobile-phone {
+.menu-item-has-children > a::after {
+  content: "\f0d7";
+  font-family: "Font Awesome 5 Free";
+  font-size: 16px;
+  padding-left: 5px;
+}
+
+/* .mobile-phone {
   border-bottom: 2px solid #fff;
 }
 
@@ -132,26 +128,29 @@ a {
   color: #ce0e2d;
   border-bottom: 2px solid #ce0e2d;
   transition: 0.4s;
-}
+} */
 
 .sub-menu-content {
   list-style: none;
+  padding: 0;
 }
 
-.sub-menu-li {
-  padding: 10px 30px;
+.sub-menu-content > li {
+  padding: 0;
+  padding: 10px 0;
   transition: 0.4s;
 }
 
-.sub-menu-a {
+.sub-menu-content a {
   color: #fff;
+  font-size: 16px;
 }
 
-.sub-menu-a:hover {
+.sub-menu-content li:hover > a {
   color: #ce0e2d;
 }
 
-.sub-menu-li:hover {
+.sub-menu-content li:hover {
   background-color: #555555;
 }
 
@@ -343,8 +342,19 @@ a {
     margin: 0;
   }
 
-  .menu-li {
+  .main-li {
     position: relative;
+  }
+
+  .main-a {
+    padding: 0 25px;
+    color: #ffffff;
+    transition: 0.4s;
+    font-size: 20px;
+  }
+
+  .main-a:hover {
+    color: #ce0e2d;
   }
 
   .desk-sub-menu-content {
@@ -356,8 +366,21 @@ a {
     background-color: #404040;
   }
 
-  .sub-menu-li {
+  .desk-sub-menu-content li {
     padding: 10px 15px;
+  }
+
+  .desk-sub-menu-content a {
+    padding: 0;
+    font-size: 16px;
+  }
+
+  .desk-sub-menu-content li:hover > a {
+    color: #ce0e2d;
+  }
+
+  .desk-sub-menu-content li:hover {
+    background-color: #555555;
   }
 
   .mobile-menu {

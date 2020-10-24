@@ -10,5 +10,18 @@ function gt_setup() {
 
 add_action('wp_enqueue_scripts', 'gt_setup');
 
+// WP nav menus
 
+function register_my_menus() {
+    register_nav_menus(
+      array(
+        'main-menu' => __( 'Main Menu' ),
+        'mobile-menu' => __( 'Mobile Menu' )
+      )
+    );
+  }
+  add_action( 'init', 'register_my_menus' );
 
+// Include walker class file
+
+require get_template_directory() . '/inc/walker.php';
