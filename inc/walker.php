@@ -78,7 +78,7 @@ class Walker_Nav_Main extends Walker_Nav_menu {
     function start_lvl( &$output, $depth = 0, $args = array() ) {
         $indent = str_repeat("\t", $depth);
         $submenu = ($depth > 0) ? ' sub-menu' : '';
-        $output .= "\n$indent<ul class=\"desk-sub-menu-content$submenu depth_$depth hide\">\n";
+        $output .= "\n$indent<ul class=\"desk-sub-menu-content$submenu depth_$depth\">\n";
     }
 
     function start_el(&$output, $item, $depth = 0, $args = array(), $id = 0) {

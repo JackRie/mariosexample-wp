@@ -57,17 +57,26 @@ a {
   display: none;
 }
 
-/* .phone-link {
+.phone-container {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.phone-link {
   border-bottom: 2px solid #ffffff;
   color: #fff;
-  font-size: 20px;
-  margin: 0 25px;
-} */
+  font-size: 18px;
+}
 
-/* .phone-link:hover {
+.fa-phone-alt {
+  padding-right: 5px;
+}
+
+.phone-link:hover {
   color: #ce0e2d;
   border-bottom: 2px solid #ce0e2d;
-} */
+}
 
 .menu-icon {
   height: 100%;
@@ -82,7 +91,7 @@ a {
 
 .mobile-menu {
   position: absolute;
-  top: 200px;
+  top: 230px;
   right: 0px;
   z-index: 1;
 }
@@ -118,6 +127,10 @@ a {
   font-family: "Font Awesome 5 Free";
   font-size: 16px;
   padding-left: 5px;
+}
+
+.menu-item-48 > span {
+  margin-left: 20px;
 }
 
 /* .mobile-phone {
@@ -340,6 +353,11 @@ a {
     align-items: center;
     height: 100%;
     margin: 0;
+    margin-right: 20px;
+  }
+
+  .phone-container {
+    right: 20px;
   }
 
   .main-li {
@@ -357,13 +375,28 @@ a {
     color: #ce0e2d;
   }
 
+  .menu-item {
+    padding: 25px 0;
+  }
+
+  .menu-item-has-children {
+    position: relative;
+    display: inline-block;
+  }
+
   .desk-sub-menu-content {
     list-style: none;
+    display: none;
     position: absolute;
-    top: 35px;
+    z-index: 1;
+    top: 55px;
     left: 15px;
     width: 210px;
     background-color: #404040;
+  }
+
+  .menu-item-has-children:hover .desk-sub-menu-content {
+    display: block;
   }
 
   .desk-sub-menu-content li {

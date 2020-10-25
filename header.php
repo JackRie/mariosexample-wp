@@ -21,4 +21,7 @@
         <i class="fas fa-bars"></i>
       </div>
       <?php wp_nav_menu( array( 'main-menu' => 'main-menu', 'container' => ' ', 'menu_class' => 'nav-ul', 'walker' => new Walker_Nav_Main) ); ?>
+      <div class="phone-container">
+        <a href="tel:6163992570" class="phone-link"><i class="fas fa-phone-alt"></i>616-365-2570</a>
+      </div>
     </nav>
