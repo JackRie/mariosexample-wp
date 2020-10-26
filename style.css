@@ -167,7 +167,7 @@ a {
   background-color: #555555;
 }
 
-.splash {
+/* .splash {
   height: 75vh;
   width: 100%;
   display: flex;
@@ -191,7 +191,7 @@ a {
 .splash-p {
   width: 60%;
   text-align: center;
-}
+} */
 
 .menu-link-section {
   display: flex;
@@ -230,7 +230,7 @@ a {
   transition: 0.4s;
 }
 
-.pick-up-section {
+/* .pick-up-section {
   height: 75vh;
   width: 100%;
   display: flex;
@@ -254,6 +254,55 @@ a {
 .pick-up-p {
   width: 60%;
   text-align: center;
+} */
+
+.location-hours > .n2-section-smartslider {
+  display: none;
+}
+
+.location-hours {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* height: 500px; */
+}
+
+.hours-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  /* margin-right: 50px; */
+}
+
+.hours-container ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hours-container li {
+  font-family: "Raleway", sans-serif;
+}
+
+.covid-disclaimer {
+  width: 300px;
+}
+
+.wp-block-image {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wp-block-image img {
+  width: 530px;
+  height: 431px;
 }
 
 .footer {
@@ -300,14 +349,6 @@ a {
 .daily-hours {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
-}
-
-.hours-ul {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .covid-disclaimer {
@@ -427,6 +468,15 @@ a {
   .logo {
     padding: 0 25px;
     flex: 0;
+  }
+
+  .location-hours {
+    flex-direction: row;
+    height: 500px;
+  }
+
+  .hours-container {
+    margin-right: 50px;
   }
 
   .footer {

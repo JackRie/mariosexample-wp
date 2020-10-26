@@ -4,7 +4,7 @@
           <a href="tel:6163992570" class="footer-phone-link">616-399-2570</a>
         </div>
         <div class="hours">
-          <h3 class="footer-h3">Hours:</h3>
+          <!-- <h3 class="footer-h3">Hours:</h3>
           <p>
             <ul class="hours-ul">
               <li class="daily-hours">Monday: Closed</li>
@@ -16,7 +16,7 @@
               <li class="daily-hours">Sunday: 4pm - 8pm</li>
             </ul>
             <p class="covid-disclaimer">Due to COVID-19 we are currently only open for pick-up orders. Once we are able to open at full capacity dine-in will be available. Thank you for your understanding as we navigate these difficult times.</p>
-          </p>
+          </p> -->
         </div>
         <div class="social">
           <h3 class="footer-h3">Follow us on</h3>

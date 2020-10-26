@@ -1,13 +1,14 @@
 
 <?php get_header(); ?>
     <div class="splash">
-      <h1 class="splash-h1">Marios Pizza</h1>
+    <?php echo do_shortcode('[smartslider3 slider="2"]'); ?>
+      <!-- <h1 class="splash-h1">Marios Pizza</h1>
       <p class="splash-p">
         Since 1980 we have been voted best pizza in Holland, but our tasty food
         options don't stop there! We offer delicious Italian and Mexican food
         all under one roof. Stop in today to try our fresh ingredients and let
         our friendly staff serve you!
-      </p>
+      </p> -->
     </div>
     <main>
       <section class="menu-link-section">
@@ -30,8 +31,15 @@
           <a href="<?php echo site_url('/mexican')?>" class="btn-link">Mexican Menu</a>
         </div>
       </section>
-      <section class="pick-up-section">
+      <!-- <section class="pick-up-section">
         <h2 class="pick-up-h2">Pick-up Window Available!</h2>
-        <p class="pick-up-p">Our drive up window is a quick and convienent way to pick up your takeout order!</p>
-      </section>
+        <p class="pick-up-p">Our drive up window is a quick and convenient way to pick up your takeout order!</p>
+      </section> -->
+        <?php if ( have_posts() ) : ?>
+          <?php while ( have_posts() ) : the_post(); ?> 
+            <div class="location-hours">
+            <?php the_content(); ?>
+            </div>
+          <?php endwhile; ?>
+        <?php endif; ?>
       <?php get_footer(); ?>
