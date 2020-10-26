@@ -1,7 +1,7 @@
 <footer class="footer">
         <div class="call-now">
           <h3 class="footer-h3">Call Now!</h3>
-          <a href="tel:6163992570" class="footer-phone-link">616-399-2570</a>
+          <a href="tel:6163992570" class="footer-phone-link"><i class="fas fa-phone-alt"></i>616-399-2570</a>
         </div>
         <div class="hours">
           <!-- <h3 class="footer-h3">Hours:</h3>

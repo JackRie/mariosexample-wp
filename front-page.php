@@ -1,6 +1,6 @@
 
 <?php get_header(); ?>
-    <div class="splash">
+    <!-- <div class="splash"> -->
     <?php echo do_shortcode('[smartslider3 slider="2"]'); ?>
       <!-- <h1 class="splash-h1">Marios Pizza</h1>
       <p class="splash-p">
@@ -9,7 +9,7 @@
         all under one roof. Stop in today to try our fresh ingredients and let
         our friendly staff serve you!
       </p> -->
-    </div>
+    <!-- </div> -->
     <main>
       <section class="menu-link-section">
         <div class="pizza">
