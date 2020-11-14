@@ -64,9 +64,9 @@ a {
 }
 
 .phone-link {
-  border-bottom: 2px solid #ffffff;
+  /* border-bottom: 2px solid #ffffff; */
   color: #fff;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .fa-phone-alt {
@@ -75,7 +75,7 @@ a {
 
 .phone-link:hover {
   color: #ce0e2d;
-  border-bottom: 2px solid #ce0e2d;
+  /* border-bottom: 2px solid #ce0e2d; */
 }
 
 .menu-icon {
@@ -173,6 +173,16 @@ a {
   margin: 0;
 }
 
+.wp-block-column {
+  min-width: unset;
+  flex-grow: unset;
+  flex-basis: unset;
+}
+
+.wp-block-column:not(:first-child) {
+  margin-left: 0;
+}
+
 .pizza,
 .italian,
 .mexican {
@@ -181,7 +191,6 @@ a {
   align-items: center;
   text-align: center;
   flex-wrap: wrap;
-  flex: 1;
   padding: 15px;
   color: #ffffff;
 }
@@ -244,7 +253,12 @@ a {
 .building-cover > .wp-block-cover__inner-container {
   display: flex;
   flex-direction: column;
-  width: unset;
+  align-items: center;
+  width: 100%;
+}
+
+.building-cover > .wp-block-cover__inner-container > .inner-text-container {
+  display: flex;
 }
 .contact {
 }
@@ -378,5 +392,6 @@ a {
 
   .building-cover > .wp-block-cover__inner-container {
     flex-direction: row;
+    justify-content: space-evenly;
   }
 }

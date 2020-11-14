@@ -1,6 +1,6 @@
 
 <?php get_header(); ?>
-    <div class="splash">
+    <!-- <div class="splash">
       <h1 class="splash-h1">Marios Pizza</h1>
       <p class="splash-p">
         Since 1980 we have been voted best pizza in Holland, but our tasty food
@@ -33,5 +33,5 @@
       <section class="pick-up-section">
         <h2 class="pick-up-h2">Pick-up Window Available!</h2>
         <p class="pick-up-p">Our drive up window is a quick and convienent way to pick up your takeout order!</p>
-      </section>
+      </section> -->
       <?php get_footer(); ?>
